@@ -1,4 +1,7 @@
 public class SailorScout {
+
+   // This section is the fields for my Sailor Scout. This field contains my
+    // attributes/properties.
     public String name;
     public float height;
     public String gender;
@@ -6,6 +9,8 @@ public class SailorScout {
     private String weapon;
     private int age;
 
+
+    // Constructor for Sailor Scout Character 
     public Character(String name, float height, String profession) {
         this.name = name;
         this.height = height;
@@ -43,6 +48,8 @@ public class SailorScout {
     public void setProfession(String profession) {
         this.profession = profession;
     }
+
+    // Main Section 
 
     public static void main(String[] args) {
         Character character = new Character();
