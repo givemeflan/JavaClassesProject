@@ -4,10 +4,7 @@ public class SailorScout {
     // attributes/properties.
     public String name;
     public float height;
-    public String gender;
     public String profession;
-    private String weapon;
-    private int age;
 
     // Constructor for Sailor Scout Character
     public Character(String name, float height, String profession) {
@@ -18,34 +15,32 @@ public class SailorScout {
 
     public Character(){
         name = "Chibi Moon";
-        gender = "female";
         height = 4.7f;
         profession = "child";
-        weapon = "Luna";
     }
 
-    private String getName() {
+    public String getName() {
         return name;
-    }
-
-    private float getHeight() {
-        return height;
-    }
-
-    public String gender(String gender) {
-        return gender;
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public float getHeight() {
+        return height;
+    }
+
     public void setHeight(float height) {
         this.height = height;
     }
 
-    public void setProfession(String profession) {
+    public String getProfession() {
         this.profession = profession;
+    }
+
+    public void setProfession(String profession) {
+        return profession;
     }
 
     // Main Section
